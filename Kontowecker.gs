@@ -22,7 +22,7 @@ function parseMessageData(message)
 function saveDataToSheet(balance)
 {
   var url = "INSERT URL TO YOUR GOOGLE SPREADSHEET HERE!"
-  var sheetname = "Asset Allocation"
+  var sheetname = "INSERT NAME OF THE SHEET! -> Default: Sheet1"
   var spreadsheet = SpreadsheetApp.openByUrl(url);
   var sheet = spreadsheet.getSheetByName(sheetname);
   var date = Utilities.formatDate(new Date(), "GMT+1", "dd.MM.yyyy");
